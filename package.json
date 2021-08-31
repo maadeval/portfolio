@@ -12,6 +12,9 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "commit:main": "git add . && cz && git push origin main",
+    "prettier:check": "prettier . --check",
+    "prettier:fix": "prettier . --write",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,5 +37,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-react": "^7.25.1",
+    "prettier": "^2.3.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
