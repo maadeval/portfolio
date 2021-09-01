@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import { linksToToggleMenu } from 'config/globalLinks'
 
-import { MenuBox } from './styles'
 import LinkButton from 'components/atoms/LinkButton'
+import MenuButton from 'components/atoms/MenuButton'
+
+import { MenuBox, Button } from './styles'
 
 const ToggleMenu = () => {
   const [isShow, setIsShow] = useState(false)
@@ -15,7 +17,9 @@ const ToggleMenu = () => {
 
   return (
     <nav>
-      <button onClick={handleChangeStatus}>Menu desplegable</button>
+      <Button onClick={handleChangeStatus}>
+        <MenuButton />
+      </Button>
       <MenuBox isShow={isShow} onClick={handleChangeStatusFromMenuOpened}>
         {linksToToggleMenu.map(({ title, url, icon }) => (
           <li key={title}>

@@ -30,3 +30,9 @@ export const MenuBox = styled.ul`
 
   transition: transform 0.2s ease;
 `
+
+export const Button = styled.button`
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+`
