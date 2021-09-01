@@ -1,6 +1,21 @@
 import styled from '@emotion/styled'
 import { styles } from 'config/styles'
 
+const handleChangeStylesIfClicked = (isClicked) => {
+  const IS_CLICKED = `
+  background-color: transparent;
+
+  ::before {
+    transform: translateY(0) rotate(45deg);
+  }
+  ::after {
+    transform: translateY(0) rotate(-45deg);
+  }
+  `
+
+  return isClicked && IS_CLICKED
+}
+
 export const ButtonBox = styled.div`
   display: flex;
   flex-direction: column;
@@ -16,6 +31,8 @@ export const Lines = styled.div`
   background-color: ${styles.darkAccent};
   border-radius: 999px;
 
+  transition: background-color 0.2s ease;
+
   ::before,
   ::after {
     content: '';
@@ -25,12 +42,15 @@ export const Lines = styled.div`
     width: 100%;
     background-color: ${styles.darkAccent};
     border-radius: 999px;
+    transition: transform 0.2s ease;
   }
 
   ::before {
-    transform: translateY(8px);
+    transform: translateY(8px) rotate(0);
   }
   ::after {
-    transform: translateY(-8px);
+    transform: translateY(-8px) rotate(0);
   }
+
+  ${({ isClicked }) => handleChangeStylesIfClicked(isClicked)}
 `

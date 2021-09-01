@@ -2,11 +2,15 @@ import styled from '@emotion/styled'
 import { styles } from 'config/styles'
 
 export const HeaderBox = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
-  padding: 24px;
+  padding: 16px 24px;
   border-bottom: 1px solid ${styles.lowAccent};
 
   @media (min-width: ${styles.desktopQuery}) {

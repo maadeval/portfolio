@@ -31,8 +31,36 @@ export const MenuBox = styled.ul`
   transition: transform 0.2s ease;
 `
 
+export const ListItem = styled.li`
+  position: relative;
+  ${({ isOpenPage }) =>
+    isOpenPage &&
+    `
+    ::before {
+      content: '';
+      position: absolute;
+      left: -1rem;
+      top: 40%;
+      transform: translateY(50%);
+      width: 4px;
+      height: 4px;
+      background-color: ${styles.hightAccent};
+      border-radius: 50%;
+    }
+  `}
+`
+
 export const Button = styled.button`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   cursor: pointer;
   background-color: transparent;
   border: none;
+`
+
+export const IndexNamePage = styled.span`
+  font-size: 16px;
+  font-family: ${styles.fontRegular};
+  margin-right: 1rem;
 `
