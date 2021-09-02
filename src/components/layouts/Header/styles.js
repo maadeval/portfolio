@@ -9,6 +9,7 @@ export const HeaderBox = styled.header`
   width: 100%;
   padding: 16px 24px;
   border-bottom: 1px solid ${styles.lowAccent};
+  background-color: ${styles.background};
 
   @media (min-width: ${styles.desktopQuery}) {
     border: 1px solid transparent;

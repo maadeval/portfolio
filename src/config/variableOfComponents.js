@@ -4,3 +4,8 @@ export const BUTTONS_TYPES = {
   secondary: 1,
   icon: 2,
 }
+
+export const TITLE_TYPES = {
+  primary: -1,
+  secondary: 0,
+}

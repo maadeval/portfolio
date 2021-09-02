@@ -10,6 +10,7 @@ export const styles = {
 
   /* shadow */
   lowShadow: 'var(--low-shadow)',
+  mediumShadow: 'var(--medium-shadow)',
 
   /* querys */
   desktopQuery: '950px',

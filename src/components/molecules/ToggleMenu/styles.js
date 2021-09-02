@@ -33,18 +33,19 @@ export const MenuBox = styled.ul`
   background-color: ${styles.transparentBackground};
   backdrop-filter: blur(4px);
   border-radius: 30px 30px 0 0;
+  box-shadow: ${styles.lowShadow};
 
   transition: transform 0.2s ease;
 
   @media (min-width: ${styles.desktopQuery}) {
     position: absolute;
+    background-color: ${styles.background};
     min-width: max-content;
     width: 224px;
     border-radius: 10px;
     padding: 16px 0;
     bottom: -0.75rem;
     left: 0.5rem;
-    box-shadow: ${styles.lowShadow};
     row-gap: 0;
     max-height: none;
     transform: translateY(100%) rotateX(0);
