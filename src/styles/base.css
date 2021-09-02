@@ -1,10 +1,13 @@
 :root {
   --background: #fff;
+  --very-low-accent: #fafafa;
   --low-accent: #eaeaea;
   --medium-accent: #666666;
   --hight-accent: #333333;
   --dark-accent: #000000;
   --transparent-background: hsla(0, 0%, 100%, 0.8);
+
+  --low-shadow: 0px 0px 8px #eaeaea;
 
   --font-regular: 'Inter-Regular';
   --font-light: 'Inter-Light';
