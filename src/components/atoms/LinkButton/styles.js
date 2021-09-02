@@ -14,9 +14,10 @@ const menuButton = `
   }
 
   @media(min-width: ${styles.desktopQuery}) {
+    display: flex;
+    align-items: center;
     font-size: 16px;
     font-family: ${styles.fontRegular};
-    display: block;
     width: 100%;
     text-align: left;
     padding: 8px 0 8px 1rem;
@@ -25,16 +26,11 @@ const menuButton = `
 
 const allStylesFromType = {
   [BUTTONS_TYPES.menu]: menuButton,
+  default: menuButton,
 }
 
 const handleSelectStyleFromType = (type) => {
-  switch (type) {
-    case BUTTONS_TYPES.menu:
-      return allStylesFromType[BUTTONS_TYPES.menu]
-
-    default:
-      break
-  }
+  return allStylesFromType[type] || allStylesFromType.default
 }
 
 export const Link = styled(LinkFromWouter)`
@@ -43,4 +39,10 @@ export const Link = styled(LinkFromWouter)`
 
 export const Icon = styled.span`
   margin-left: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+
+  @media (min-width: ${styles.desktopQuery}) {
+    width: 16px;
+  }
 `
