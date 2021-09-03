@@ -10,6 +10,7 @@ export const HeaderBox = styled.header`
   padding: 16px 24px;
   border-bottom: 1px solid ${styles.lowAccent};
   background-color: ${styles.background};
+  z-index: 10;
 
   @media (min-width: ${styles.desktopQuery}) {
     border: 1px solid transparent;

@@ -89,12 +89,18 @@ const primaryButton = `
       }
     }
   }
+
+  @media(min-width: ${styles.desktopQuery}) {
+    display: inline-flex;
+    width: auto;
+    margin: 8px 16px 8px 0;
+  }
 `
 
 const allStylesFromType = {
+  [BUTTONS_TYPES.primary]: primaryButton,
   [BUTTONS_TYPES.menu]: menuButton,
   [BUTTONS_TYPES.icon]: iconButton,
-  [BUTTONS_TYPES.primary]: primaryButton,
   default: menuButton,
 }
 

@@ -15,6 +15,7 @@ const primaryStyle = `
   
   @media(min-width: ${styles.desktopQuery}) {
     font-size: 64px;
+    margin-top: 0;
   }
 `
 

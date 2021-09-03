@@ -6,38 +6,57 @@ import Text from 'components/atoms/Text'
 import LinkButton from 'components/atoms/LinkButton'
 import GradientCircle from 'components/ui/GradientCircle'
 
+import BigLogo from 'assets/img/BigLogo.png'
+
+import {
+  ButtonLinksContainer,
+  HeaderContainer,
+  HomeContainer,
+  ToggleLinksContainer,
+  RigthContent,
+  LogoImage,
+  LeftContent,
+} from './styles'
+
 const Home = () => {
   return (
-    <>
-      <GradientCircle />
-      <div style={{ paddingTop: '56px' }}>
-        <Title type={TITLE_TYPES.secondary}>Mateo Alvarez</Title>
-        <Title type={TITLE_TYPES.primary}>Frontend Developer</Title>
-      </div>
-      <Text>
-        Hola! Soy Mateo, un desarrollador que ama las 🍩, pero te cuento un poco
-        más de mi aquí abajo 👇🏻. Por dónde quieres empezar?
-      </Text>
-      {socialMediaLinks.map(({ title, url, icon }) => (
-        <LinkButton
-          key={title}
-          url={url}
-          icon={icon}
-          type={BUTTONS_TYPES.icon}
-        />
-      ))}
-      <div style={{ paddingTop: '24px' }}>
-        {linksToToggleMenu.slice(1).map(({ title, url, icon }) => (
-          <LinkButton
-            title={title}
-            key={title}
-            url={url}
-            icon={icon}
-            type={BUTTONS_TYPES.primary}
-          />
-        ))}
-      </div>
-    </>
+    <HomeContainer>
+      <LeftContent>
+        <GradientCircle />
+        <LogoImage src={BigLogo} />
+      </LeftContent>
+      <RigthContent>
+        <HeaderContainer>
+          <Title type={TITLE_TYPES.secondary}>Mateo Alvarez</Title>
+          <Title type={TITLE_TYPES.primary}>Frontend Developer</Title>
+        </HeaderContainer>
+        <Text>
+          Hola! Soy Mateo, un desarrollador que ama las 🍩, pero te cuento un
+          poco más de mi aquí abajo 👇🏻. Por dónde quieres empezar?
+        </Text>
+        <ToggleLinksContainer>
+          {socialMediaLinks.map(({ title, url, icon }) => (
+            <LinkButton
+              key={title}
+              url={url}
+              icon={icon}
+              type={BUTTONS_TYPES.icon}
+            />
+          ))}
+        </ToggleLinksContainer>
+        <ButtonLinksContainer>
+          {linksToToggleMenu.slice(1).map(({ title, url, icon }) => (
+            <LinkButton
+              title={title}
+              key={title}
+              url={url}
+              icon={icon}
+              type={BUTTONS_TYPES.primary}
+            />
+          ))}
+        </ButtonLinksContainer>
+      </RigthContent>
+    </HomeContainer>
   )
 }
 

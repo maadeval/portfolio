@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { styles } from 'config/styles'
 
 const GradientCircle = () => {
   return <Gradient></Gradient>
@@ -18,6 +19,14 @@ const Gradient = styled.div`
   border-radius: 50%;
   margin-left: 50%;
   transform: translateX(-50%);
+
+  @media (min-width: ${styles.desktopQuery}) {
+    margin-left: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+  }
 `
 
 export default GradientCircle
