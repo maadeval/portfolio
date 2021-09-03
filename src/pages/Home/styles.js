@@ -12,6 +12,18 @@ export const HomeContainer = styled.section`
   }
 `
 
+export const ToggleLinkLeft = styled.div`
+  display: none;
+
+  @media (min-width: ${styles.desktopQuery}) {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -80px;
+    transform: translateX(-50%);
+  }
+`
+
 export const LeftContent = styled.div`
   display: flex;
   align-items: center;

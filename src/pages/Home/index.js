@@ -16,6 +16,7 @@ import {
   RigthContent,
   LogoImage,
   LeftContent,
+  ToggleLinkLeft,
 } from './styles'
 
 const Home = () => {
@@ -24,6 +25,16 @@ const Home = () => {
       <LeftContent>
         <GradientCircle />
         <LogoImage src={BigLogo} />
+        <ToggleLinkLeft>
+          {socialMediaLinks.map(({ title, url, icon }) => (
+            <LinkButton
+              key={title}
+              url={url}
+              icon={icon}
+              type={BUTTONS_TYPES.icon}
+            />
+          ))}
+        </ToggleLinkLeft>
       </LeftContent>
       <RigthContent>
         <HeaderContainer>
