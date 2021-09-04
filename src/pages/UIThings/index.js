@@ -1,8 +1,31 @@
+import Title from 'components/atoms/Title'
+import { uiProjects } from 'config/uiProjects'
+import { TITLE_TYPES } from 'config/variableOfComponents'
+
+import {
+  ContainerUiProjects,
+  PageContainer,
+  UIImage,
+  UiImageContain,
+} from './styles'
+
 const UIThings = () => {
   return (
-    <>
-      <h1>Cosas de UI</h1>
-    </>
+    <PageContainer>
+      <Title type={TITLE_TYPES.primary}>Desarrollo UI</Title>
+      <Title type={TITLE_TYPES.tertiary}>
+        Además de programar (y las películas de terror), me encanta diseñar.
+        Comprender y cooperar entre ambos equipos creo que es genial para el
+        desarrollo de un mejor producto.
+      </Title>
+      <ContainerUiProjects>
+        {uiProjects.map(({ title, url, img }) => (
+          <UiImageContain key={title} title={title}>
+            <UIImage src={img} alt={title} />
+          </UiImageContain>
+        ))}
+      </ContainerUiProjects>
+    </PageContainer>
   )
 }
 

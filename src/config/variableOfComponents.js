@@ -8,4 +8,5 @@ export const BUTTONS_TYPES = {
 export const TITLE_TYPES = {
   primary: -1,
   secondary: 0,
+  tertiary: 1,
 }

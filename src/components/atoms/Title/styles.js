@@ -19,9 +19,19 @@ const primaryStyle = `
   }
 `
 
+const tertiaryStyle = `
+  font-size: 16px;
+  color: ${styles.hightAccent};
+  font-family: ${styles.fontRegular};
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+`
+
 const allStylesOfTitle = {
   [TITLE_TYPES.primary]: primaryStyle,
   [TITLE_TYPES.secondary]: secondaryStyle,
+  [TITLE_TYPES.tertiary]: tertiaryStyle,
   default: secondaryStyle,
 }
 
