@@ -42,6 +42,29 @@ export const UiImageContain = styled.figure`
   :hover::before {
     transform: translateY(0);
   }
+
+  :hover > a {
+    transform: translateY(0);
+  }
+`
+
+export const LinkTo = styled.a`
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: ${styles.darkAccent};
+  padding: 0.5rem;
+  position: absolute;
+  right: 8px;
+  top: 0;
+  background-color: ${styles.transparentBackground};
+  border-radius: 0 0 8px 8px;
+  column-gap: 8px;
+  cursor: pointer;
+
+  transform: translateY(-100%);
+  transition: transform 0.2s ease;
 `
 
 export const UIImage = styled.img`

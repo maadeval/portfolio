@@ -1,9 +1,11 @@
 import Title from 'components/atoms/Title'
+import IconDribbble from 'components/ui/IconDribbble'
 import { uiProjects } from 'config/uiProjects'
 import { TITLE_TYPES } from 'config/variableOfComponents'
 
 import {
   ContainerUiProjects,
+  LinkTo,
   PageContainer,
   UIImage,
   UiImageContain,
@@ -21,6 +23,10 @@ const UIThings = () => {
       <ContainerUiProjects>
         {uiProjects.map(({ title, url, img }) => (
           <UiImageContain key={title} title={title}>
+            <LinkTo target="_blank" href={url}>
+              Ver en
+              <IconDribbble />
+            </LinkTo>
             <UIImage src={img} alt={title} />
           </UiImageContain>
         ))}

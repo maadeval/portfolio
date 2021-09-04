@@ -5,7 +5,7 @@ export const uiProjects = [
   {
     title: 'Netflix | Rediseño',
     img: netflix,
-    url: '',
+    url: 'https://dribbble.com/shots/16051253-Netflix-Redesign',
     description: '',
   },
   {
