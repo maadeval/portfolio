@@ -14,7 +14,7 @@ export const linksToToggleMenu = [
     icon: null,
   },
   {
-    title: 'Cosas de UI',
+    title: 'Diseño UI',
     url: '/ui-design',
     icon: null,
   },
