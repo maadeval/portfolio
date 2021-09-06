@@ -12,7 +12,7 @@ const PageRouters = () => {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/about-me" component={MyHistory} />
-      <Route path="/ui-design" component={UIThings} />
+      <Route path="/ui-design/:title?" component={UIThings} />
       <Route path="/projects" component={Projects} />
       <Route path="/contact" component={Contact} />
       <Route component={Error404} />

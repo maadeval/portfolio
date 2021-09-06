@@ -68,6 +68,8 @@ export const LinkTo = styled.a`
 `
 
 export const UIImage = styled.img`
+  object-fit: cover;
+  height: 100%;
   width: 100%;
   display: block;
   margin: 0;

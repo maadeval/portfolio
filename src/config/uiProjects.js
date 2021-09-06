@@ -3,37 +3,14 @@ import netflix from 'assets/img/netflix.png'
 
 export const uiProjects = [
   {
-    title: 'Netflix | Rediseño',
+    title: 'Netflix',
     img: netflix,
     url: 'https://dribbble.com/shots/16051253-Netflix-Redesign',
-    description: '',
+    description:
+      'Fue uno de mis primeros trabajos en Figma. Me gustó sobre todo por ver lo bien que queda la transparencia en enlaces no activos y el contraste de los colores claves de Netflix.',
   },
   {
-    title: 'MercadoLibre | Rediseño',
-    img: mercadoLibre,
-    url: 'https://dribbble.com/shots/16051229-E-commerce-MeLi-Redesign',
-    description: 'test',
-  },
-  {
-    title: 'MercadoLibre | Rediseño',
-    img: mercadoLibre,
-    url: 'https://dribbble.com/shots/16051229-E-commerce-MeLi-Redesign',
-    description: 'test',
-  },
-  {
-    title: 'MercadoLibre | Rediseño',
-    img: mercadoLibre,
-    url: 'https://dribbble.com/shots/16051229-E-commerce-MeLi-Redesign',
-    description: 'test',
-  },
-  {
-    title: 'MercadoLibre | Rediseño',
-    img: mercadoLibre,
-    url: 'https://dribbble.com/shots/16051229-E-commerce-MeLi-Redesign',
-    description: 'test',
-  },
-  {
-    title: 'MercadoLibre | Rediseño',
+    title: 'Mercado Libre',
     img: mercadoLibre,
     url: 'https://dribbble.com/shots/16051229-E-commerce-MeLi-Redesign',
     description: 'test',

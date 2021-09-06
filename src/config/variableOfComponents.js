@@ -10,3 +10,8 @@ export const TITLE_TYPES = {
   secondary: 0,
   tertiary: 1,
 }
+
+export const TEXT_TYPES = {
+  low: -1,
+  normal: 0,
+}
