@@ -13,6 +13,7 @@ export const uiProjects = [
     title: 'Mercado Libre',
     img: mercadoLibre,
     url: 'https://dribbble.com/shots/16051229-E-commerce-MeLi-Redesign',
-    description: 'test',
+    description:
+      'Una alternativa que no refleja el color principal de la marca, pero que utiliza sus colores secundarios para resaltar el logo de la marca y el propio producto en búsqueda.',
   },
 ]
