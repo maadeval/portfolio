@@ -15,6 +15,7 @@ const Header = () => {
         <LogoLink />
         <ToggleMenu />
         <ThemeButtonContainer>
+          <span style={{ marginRight: '1rem' }}>Tema</span>
           <ThemeButton />
         </ThemeButtonContainer>
       </HeaderContainerOptions>
