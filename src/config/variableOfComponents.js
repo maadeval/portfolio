@@ -5,6 +5,12 @@ export const BUTTONS_TYPES = {
   icon: 2,
 }
 
+export const TEXT_ALIGN = {
+  left: -1,
+  center: 0,
+  rigth: 1,
+}
+
 export const TITLE_TYPES = {
   primary: -1,
   secondary: 0,

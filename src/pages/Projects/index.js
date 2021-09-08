@@ -1,6 +1,9 @@
-import Title from 'components/atoms/Title'
+import { useLocation } from 'wouter'
+
 import { TITLE_TYPES } from 'config/variableOfComponents'
 import { webProjects } from 'config/webProjects'
+
+import Title from 'components/atoms/Title'
 
 import {
   ContainerUiProjects,
@@ -10,6 +13,11 @@ import {
 } from './styles'
 
 const Projects = () => {
+  const [actualLocation, setLocation] = useLocation()
+
+  const handleRedirectToInformation = (url) =>
+    setLocation(`${actualLocation}/${url}`)
+
   return (
     <PageContainer>
       <Title type={TITLE_TYPES.primary}>Proyectos</Title>
@@ -21,7 +29,11 @@ const Projects = () => {
       </Title>
       <ContainerUiProjects>
         {webProjects.map(({ title, mainImg }) => (
-          <UiImageContain key={title} title={title}>
+          <UiImageContain
+            key={title}
+            title={title}
+            onClick={() => handleRedirectToInformation(title)}
+          >
             <UIImage src={mainImg} alt={title} />
           </UiImageContain>
         ))}

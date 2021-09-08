@@ -11,6 +11,7 @@ const IconButton = ({ title, type, url, icon }) => {
       href={url}
       rel="noreferrer"
     >
+      {title}
       <Icon type={type}>{icon}</Icon>
     </LinkWithTarget>
   )
@@ -25,7 +26,12 @@ const NormalButton = ({ type, url, title, icon }) => {
   )
 }
 
-const LinkButton = ({ title, url, icon, type = BUTTONS_TYPES.primary }) => {
+const LinkButton = ({
+  title = '',
+  url = '',
+  icon,
+  type = BUTTONS_TYPES.primary,
+}) => {
   return (
     <>
       {type === BUTTONS_TYPES.icon ? (

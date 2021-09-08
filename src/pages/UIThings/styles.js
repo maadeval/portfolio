@@ -7,8 +7,6 @@ export const PageContainer = styled.section`
 `
 
 export const ContainerUiProjects = styled.article`
-  /* columns: 3 300px;
-  column-gap: 16px; */
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   column-gap: 24px;
