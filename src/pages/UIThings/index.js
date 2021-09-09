@@ -46,7 +46,7 @@ const UIThings = ({ params }) => {
               Ver en
               <IconDribbble />
             </LinkTo>
-            <UIImage src={img} alt={title} />
+            <UIImage loading="lazy" src={img} alt={title} />
           </UiImageContain>
         ))}
       </ContainerUiProjects>

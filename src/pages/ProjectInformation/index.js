@@ -45,9 +45,11 @@ const ProjectInformation = ({ params }) => {
   return (
     <PageContainer>
       <ImagesArticleContainer>
-        <ImageOfGallery src={mainImg} />
+        <ImageOfGallery loading="lazy" src={mainImg} />
         {images &&
-          images.map((singleImage) => <img src={singleImage} key={title} />)}
+          images.map((singleImage) => (
+            <img loading="lazy" src={singleImage} key={title} />
+          ))}
       </ImagesArticleContainer>
       <article>
         <HeaderContainer>

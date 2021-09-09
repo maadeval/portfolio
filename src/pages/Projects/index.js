@@ -34,7 +34,7 @@ const Projects = () => {
             title={title}
             onClick={() => handleRedirectToInformation(title)}
           >
-            <UIImage src={mainImg} alt={title} />
+            <UIImage loading="lazy" src={mainImg} alt={title} />
           </UiImageContain>
         ))}
       </ContainerUiProjects>

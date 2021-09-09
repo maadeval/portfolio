@@ -30,7 +30,7 @@ const ModalOfUIDesign = ({ title: _title }) => {
     <ProjectContainer onClick={handleReturnDesignPage}>
       <Title type={TITLE_TYPES.secondary}>{title}</Title>
       <Text type={TEXT_TYPES.low}>{description}</Text>
-      <Image src={img} alt={title} />
+      <Image loading="lazy" src={img} alt={title} />
     </ProjectContainer>
   )
 }

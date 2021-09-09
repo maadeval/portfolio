@@ -24,7 +24,7 @@ const Home = () => {
     <HomeContainer>
       <LeftContent>
         <GradientCircle />
-        <LogoImage src={BigLogo} />
+        <LogoImage loading="lazy" src={BigLogo} />
         <ToggleLinkLeft>
           {socialMediaLinks.map(({ title, url, icon }) => (
             <LinkButton
