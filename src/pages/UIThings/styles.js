@@ -71,5 +71,5 @@ export const UIImage = styled.img`
   width: 100%;
   display: block;
   margin: 0;
-  background-color: #eaeaea;
+  background-color: ${styles.lowAccent};
 `

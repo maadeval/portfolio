@@ -3,14 +3,15 @@ import PropTypes from 'prop-types'
 
 import { webProjects } from 'config/webProjects'
 import {
+  BUTTONS_TYPES,
   TEXT_ALIGN,
   TEXT_TYPES,
   TITLE_TYPES,
 } from 'config/variableOfComponents'
 
-import LinkButton from 'components/atoms/LinkButton'
 import Text from 'components/atoms/Text'
 import Title from 'components/atoms/Title'
+import TargetBlankButton from 'components/atoms/TargetBlankButton'
 
 import {
   PageContainer,
@@ -60,8 +61,12 @@ const ProjectInformation = ({ params }) => {
             {description}
           </Text>
           <ButtonsContainer>
-            <LinkButton url={codeUrl} title="Codigo fuente" />
-            <LinkButton title="Ver sitio web" url={pageUrl} />
+            <TargetBlankButton url={codeUrl} title="Codigo fuente" />
+            <TargetBlankButton
+              type={BUTTONS_TYPES.secondary}
+              title="Ver sitio web"
+              url={pageUrl}
+            />
           </ButtonsContainer>
           <Text align={TEXT_ALIGN.left} type={TEXT_TYPES.low}>
             {extraDescription}

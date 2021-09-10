@@ -1,12 +1,8 @@
 import styled from '@emotion/styled'
-import { Link as LinkFromWouter } from 'wouter'
+
 import { styles } from 'config/styles'
 import { BUTTONS_TYPES } from 'config/variableOfComponents'
-import { handleSelectStyleFromType } from './selectStylesFromType'
-
-export const Link = styled(LinkFromWouter)`
-  ${({ type }) => handleSelectStyleFromType(type)}
-`
+import { handleSelectStyleFromType } from './selectStyleFromType'
 
 export const Icon = styled.span`
   margin-left: 0.5rem;
@@ -18,4 +14,8 @@ export const Icon = styled.span`
   @media (min-width: ${styles.desktopQuery}) {
     width: 16px;
   }
+`
+
+export const Link = styled.a`
+  ${({ type }) => handleSelectStyleFromType(type)}
 `
