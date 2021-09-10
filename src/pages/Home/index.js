@@ -61,13 +61,13 @@ const Home = () => {
           ))}
         </ToggleLinksContainer>
         <ButtonLinksContainer>
-          {linksToToggleMenu.slice(1).map(({ title, url, icon }) => (
+          {linksToToggleMenu.slice(1).map(({ title, url, icon, type }) => (
             <LinkButton
               title={title}
               key={title}
               url={url}
               icon={icon}
-              type={BUTTONS_TYPES.primary}
+              type={type || BUTTONS_TYPES.primary}
             />
           ))}
         </ButtonLinksContainer>
