@@ -1,5 +1,8 @@
+import IconDribbble from 'components/ui/IconDribbble'
+
 import mercadoLibre from 'assets/img/mercado-libre.png'
 import netflix from 'assets/img/netflix.png'
+import salomonSanchez from 'assets/img/salomon-sanchez-avatar.jpg'
 
 export const uiProjects = [
   {
@@ -15,5 +18,19 @@ export const uiProjects = [
     url: 'https://dribbble.com/shots/16051229-E-commerce-MeLi-Redesign',
     description:
       'Una alternativa que no refleja el color principal de la marca, pero que utiliza sus colores secundarios para resaltar el logo de la marca y el propio producto en búsqueda.',
+  },
+]
+
+export const dribbbleAccount = {
+  title: 'Dribbble',
+  url: 'https://dribbble.com/madeval',
+  icon: <IconDribbble />,
+}
+
+export const uiProjectsTeach = [
+  {
+    img: salomonSanchez,
+    title: 'Salomon Sanchez',
+    url: 'https://www.youtube.com/c/SalomonSanchez',
   },
 ]

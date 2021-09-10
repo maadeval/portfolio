@@ -63,30 +63,6 @@ const primaryButton = `
     box-shadow:  ${styles.mediumShadow};
     color: ${styles.darkAccent};
   }
-  
-  :last-child {
-    background-color: ${styles.darkAccent};
-    border: 1px solid transparent;
-    color: ${styles.background};
-
-    > span {
-      width: 16px;
-    }
-  
-    > span > svg > path {
-      stroke: ${styles.background};
-    }
-    
-    :hover {
-      background-color: ${styles.background};
-      color: ${styles.darkAccent};
-      border: 1px solid ${styles.darkAccent};
-
-      > span > svg > path {
-        stroke: ${styles.darkAccent};
-      }
-    }
-  }
 
   @media(min-width: ${styles.desktopQuery}) {
     display: inline-flex;
@@ -95,8 +71,34 @@ const primaryButton = `
   }
 `
 
+const secondaryButton = `
+  ${primaryButton}
+  background-color: ${styles.darkAccent};
+  border: 1px solid transparent;
+  color: ${styles.background};
+
+  > span {
+    width: 16px;
+  }
+
+  > span > svg > path {
+    stroke: ${styles.background};
+  }
+  
+  :hover {
+    background-color: ${styles.background};
+    color: ${styles.darkAccent};
+    border: 1px solid ${styles.darkAccent};
+
+    > span > svg > path {
+      stroke: ${styles.darkAccent};
+    }
+  }
+`
+
 const allStylesFromType = {
   [BUTTONS_TYPES.primary]: primaryButton,
+  [BUTTONS_TYPES.secondary]: secondaryButton,
   [BUTTONS_TYPES.menu]: menuButton,
   [BUTTONS_TYPES.icon]: iconButton,
   default: menuButton,

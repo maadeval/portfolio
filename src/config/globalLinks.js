@@ -2,6 +2,8 @@ import IconDownload from 'components/ui/IconDownload'
 import IconGitHub from 'components/ui/IconGitHub'
 import IconLinkedIn from 'components/ui/IconLinkedIn'
 
+import { BUTTONS_TYPES } from './variableOfComponents'
+
 export const linksToToggleMenu = [
   {
     title: 'Inicio',
@@ -31,6 +33,7 @@ export const linksToToggleMenu = [
   {
     title: 'Curriculum',
     url: '/curriculum',
+    type: BUTTONS_TYPES.secondary,
     icon: <IconDownload />,
   },
 ]
