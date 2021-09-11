@@ -8,4 +8,6 @@ export const AvatarImage = styled.img`
 
 export const RedirectLink = styled.a`
   display: inline-block;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 `
