@@ -29,10 +29,10 @@ const ProjectInformation = ({ params }) => {
     title,
     description,
     extraDescription,
-    mainImg,
+    img,
     images,
     codeUrl,
-    pageUrl,
+    url,
     videoUrl,
   } = projectInformation
 
@@ -46,7 +46,7 @@ const ProjectInformation = ({ params }) => {
   return (
     <PageContainer>
       <ImagesArticleContainer>
-        <ImageOfGallery loading="lazy" src={mainImg} />
+        <ImageOfGallery loading="lazy" src={img} />
         {images &&
           images.map((singleImage) => (
             <img loading="lazy" src={singleImage} key={title} />
@@ -65,7 +65,7 @@ const ProjectInformation = ({ params }) => {
             <TargetBlankButton
               type={BUTTONS_TYPES.secondary}
               title="Ver sitio web"
-              url={pageUrl}
+              url={url}
             />
           </ButtonsContainer>
           <Text align={TEXT_ALIGN.left} type={TEXT_TYPES.low}>

@@ -1,32 +1,19 @@
 import PropTypes from 'prop-types'
-import { useLocation } from 'wouter'
 
 import { uiProjects, dribbbleAccount, uiProjectsTeach } from 'config/uiProjects'
 import { TITLE_TYPES } from 'config/variableOfComponents'
 
-import Title from 'components/atoms/Title'
+import ContainerProjects from 'components/molecules/ContainerProjects'
 import IconDribbble from 'components/ui/IconDribbble'
-import ModalPortal from 'components/layouts/Modal'
 import ModalOfUIDesign from 'components/layouts/ModalOfUIDesign'
-import TargetBlankButton from 'components/atoms/TargetBlankButton'
-import Avatar from 'components/atoms/Avatar'
+import ModalPortal from 'components/layouts/Modal'
+import TeachersAndNetworkBar from 'components/molecules/TeachersAndNetworkBar'
+import Title from 'components/atoms/Title'
 
-import {
-  ContainerUiProjects,
-  LinkTo,
-  MapTeachersBox,
-  PageContainer,
-  Point,
-  TeacherAndSocialMediaBox,
-  UIImage,
-  UiImageContain,
-} from './styles'
+import { PageContainer } from './styles'
 
 const UIThings = ({ params }) => {
-  const { title } = params
-
-  const [, setLocation] = useLocation()
-  const handleRedirectToModal = (url) => setLocation(`/ui-design/${url}`)
+  const { title: urlParam } = params
 
   return (
     <PageContainer>
@@ -36,45 +23,22 @@ const UIThings = ({ params }) => {
         Comprender y cooperar entre ambos equipos creo que es genial para el
         desarrollo de un mejor producto.
       </Title>
-      <TeacherAndSocialMediaBox>
-        <MapTeachersBox>
-          Aprendido de
-          <div>
-            {uiProjectsTeach.map(({ img, title, url }) => (
-              <Avatar key={title} src={img} url={url} alt={title} />
-            ))}
-          </div>
-        </MapTeachersBox>
-        <Point />
-        <TargetBlankButton
-          icon={dribbbleAccount.icon}
-          title={dribbbleAccount.title}
-          url={dribbbleAccount.url}
-        />
-      </TeacherAndSocialMediaBox>
-      <ContainerUiProjects>
-        {uiProjects.map(({ title, url, img, description }) => (
-          <UiImageContain
-            onClick={() => handleRedirectToModal(title)}
-            key={title}
-            title={title}
-          >
-            <LinkTo
-              target="_blank"
-              href={url}
-              onClick={(e) => e.stopPropagation()}
-            >
-              Ver en Dribbble
-              <IconDribbble />
-            </LinkTo>
-            <UIImage loading="lazy" src={img} alt={title} />
-          </UiImageContain>
-        ))}
-      </ContainerUiProjects>
 
-      {typeof title !== 'undefined' && (
+      <TeachersAndNetworkBar
+        buttonInformation={dribbbleAccount}
+        teachers={uiProjectsTeach}
+      />
+
+      <ContainerProjects
+        listOfProjects={uiProjects}
+        textOfRedirectButton={'Ver en Dribbble'}
+        IconOfRedirectButton={IconDribbble}
+        pathOfRedirectProject={'/ui-design'}
+      />
+
+      {typeof urlParam !== 'undefined' && (
         <ModalPortal>
-          <ModalOfUIDesign title={title} />
+          <ModalOfUIDesign title={urlParam} />
         </ModalPortal>
       )}
     </PageContainer>
