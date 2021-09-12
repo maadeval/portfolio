@@ -1,6 +1,7 @@
 import IconGitHub from 'components/ui/IconGitHub'
 
-import voyAlGym from 'assets/img/voyalgym.jpg'
+/* import voyAlGym from 'assets/img/voyalgym.jpg' */
+import netflix from 'assets/img/netflix.png'
 import dorianDesignsAvatar from 'assets/img/dorian-designs-avatar.jpg'
 import midudevAvatar from 'assets/img/midudev-avatar.jpg'
 
@@ -8,15 +9,25 @@ export const webProjects = [
   {
     title: 'Voy al Gym',
     description:
-      'Un sitio destinado a deportistas y entrenadores - dueños de gimnasios. La idea es simple, ayudar a los entrenadores a gestionar los cupos de sus clases por hora y día. Y permitirle a los socios registrarse a un cupo limitado solo con un click.',
+      'Un sitio destinado a deportistas y dueños de gimnasios. La idea es simple, ayudar a los dueños a gestionar los cupos de sus clases por hora y día. Y permitirle a los socios registrarse a un cupo limitado solo con un click.',
     extraDescription:
-      'Si quieres ver la demo sin tener que registrarte, puedes ver el video en YouTube. Donde resumo el funcionamiento, la ruta de usuario y las tecnologías que se han usado.',
-    img: voyAlGym,
-    secondaryImages: [''],
+      'Si quieres ver la demo sin tener que registrarte dentro de la app, puedes ver el video en YouTube. Donde resumo el funcionamiento y la ruta de usuario del proyecto.',
+    img: netflix,
+    images: [netflix, netflix, netflix, netflix],
     url: 'https://github.com/Mateoac12/goGym',
     codeUrl: 'https://github.com/Mateoac12/goGym',
-    videoUrl: '',
+    videoUrl: 'https://github.com/Mateoac12/goGym',
     icon: <IconGitHub />,
+    tecnologies: [
+      {
+        name: 'React',
+        icon: <IconGitHub />,
+      },
+      {
+        name: 'Firebase',
+        icon: <IconGitHub />,
+      },
+    ],
   },
 ]
 

@@ -14,7 +14,7 @@ import ContainerProjects from 'components/molecules/ContainerProjects'
 const Projects = () => {
   return (
     <PageContainer>
-      <Title type={TITLE_TYPES.primary}>Proyectos web</Title>
+      <Title type={TITLE_TYPES.primary}>Proyectos</Title>
       <Title type={TITLE_TYPES.tertiary}>
         Proyectos personales que hice a modo de práctica. Uno de mis objetivos
         es tratar estos sitios como proyectos verdaderos, pensando en la
