@@ -58,8 +58,9 @@ const secondaryButton = `
     width: 16px;
   }
 
-  > span > svg > path {
+  > span svg path {
     stroke: ${styles.background};
+    fill: ${styles.background};
   }
 
   :hover {
