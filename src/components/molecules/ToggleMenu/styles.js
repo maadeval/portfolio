@@ -28,8 +28,8 @@ export const MenuBox = styled.ul`
   justify-content: center;
   align-items: center;
   row-gap: 24px;
-  padding: 104px 0 144px;
-  max-height: 30vh;
+  padding: 104px 0;
+  max-height: 40vh;
   background-color: ${styles.transparentBackground};
   backdrop-filter: blur(4px);
   border-radius: 30px 30px 0 0;

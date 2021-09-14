@@ -30,26 +30,3 @@ export const HeaderContainerOptions = styled.div`
     margin-right: auto;
   }
 `
-
-export const ThemeButton = styled.button`
-  width: 24px;
-  height: 24px;
-  background-color: ${styles.hightAccent};
-  border-radius: 50%;
-  border: none;
-  display: none;
-
-  @media (min-width: ${styles.desktopQuery}) {
-    display: block;
-  }
-`
-
-export const ThemeButtonContainer = styled.div`
-  display: none;
-
-  @media (min-width: ${styles.desktopQuery}) {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-  }
-`

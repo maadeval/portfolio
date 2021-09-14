@@ -14,6 +14,7 @@ import {
   ListItem,
   NavContainer,
 } from './styles'
+import ThemeButton from '../ThemeButton'
 
 const ToggleMenu = () => {
   const [actualUrl] = useLocation()
@@ -49,6 +50,7 @@ const ToggleMenu = () => {
             />
           </ListItem>
         ))}
+        <ThemeButton type={'mobile'} />
       </MenuBox>
     </NavContainer>
   )
