@@ -31,28 +31,6 @@ export const SecondaryImagesBox = styled.div`
   max-width: 900px;
 `
 
-export const TecnologiesAndSubDescriptionBox = styled.article`
-  margin-top: 64px;
-`
-
-export const ListOfTecnologies = styled.section`
-  display: flex;
-  margin: 32px;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 24px;
-`
-
-export const SingleTecnologyStack = styled.article`
-  display: flex;
-  padding: 16px 40px;
-  column-gap: 16px;
-  border-radius: 8px;
-  box-shadow: ${styles.lowShadow};
-`
-
 export const ConentForRecruiters = styled.div`
   display: grid;
   justify-items: center;

@@ -1,12 +1,10 @@
 import PropTypes from 'prop-types'
 
 import useFindProjectInformation from 'hooks/useFindProjectInformation'
-/* eslint-disable */
 import { webProjects } from 'config/webProjects'
 import { BUTTONS_TYPES, TITLE_TYPES } from 'config/variableOfComponents'
 
 import Title from 'components/atoms/Title'
-import Text from 'components/atoms/Text'
 import TargetBlankButton from 'components/atoms/TargetBlankButton'
 
 import {
@@ -15,11 +13,9 @@ import {
   GalleryOfImages,
   SecondaryImagesBox,
   Image,
-  TecnologiesAndSubDescriptionBox,
-  ListOfTecnologies,
-  SingleTecnologyStack,
   ConentForRecruiters,
 } from './styles'
+import ListOfTecnologiesAndTitle from 'components/molecules/ListOfTecnologies'
 
 const ProjectInformation = ({ params }) => {
   const { title: titleFromUrl } = params
@@ -55,24 +51,16 @@ const ProjectInformation = ({ params }) => {
         <SecondaryImagesBox>
           {images &&
             images.map((singleImage, index) => (
-              <Image src={singleImage} alt={index} />
+              <Image key={index} src={singleImage} alt={index} />
             ))}
         </SecondaryImagesBox>
       </GalleryOfImages>
-      <TecnologiesAndSubDescriptionBox>
-        <Title type={TITLE_TYPES.secondary}>
-          Pack tecnologico del Proyecto
-        </Title>
-        <ListOfTecnologies>
-          {tecnologies &&
-            tecnologies.map(({ name, icon }) => (
-              <SingleTecnologyStack>
-                {icon}
-                <Title type={TITLE_TYPES.tertiary}>{name}</Title>
-              </SingleTecnologyStack>
-            ))}
-        </ListOfTecnologies>
-      </TecnologiesAndSubDescriptionBox>
+
+      <ListOfTecnologiesAndTitle
+        tecnologies={tecnologies}
+        title={'Pack tecnologico del Proyecto'}
+      />
+
       <ConentForRecruiters>
         <Title type={TITLE_TYPES.secondary}>Recurso para Recruiters</Title>
         <Title type={TITLE_TYPES.tertiary}>{extraDescription}</Title>
