@@ -6,6 +6,7 @@ import UIThings from 'pages/UIThings'
 import Projects from 'pages/Projects'
 import ProjectInformation from 'pages/ProjectInformation'
 import Contact from 'pages/Contact'
+import Curriculum from 'pages/Curriculum'
 
 const PageRouters = () => {
   return (
@@ -16,6 +17,7 @@ const PageRouters = () => {
       <Route path="/projects" component={Projects} />
       <Route path="/projects/:title" component={ProjectInformation} />
       <Route path="/contact" component={Contact} />
+      <Route path="/curriculum" component={Curriculum} />
       <Redirect to="/" />
     </Switch>
   )
