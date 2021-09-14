@@ -37,7 +37,7 @@ export const UiImageContain = styled.figure`
     opacity: 0;
     font-size: 24px;
     padding: 25% 0 1rem;
-    background: linear-gradient(transparent 10%, #fff 90%);
+    background: linear-gradient(transparent 10%, ${styles.background} 90%);
     transition: opacity 0.2s ease;
   }
   :hover::before {

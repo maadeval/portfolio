@@ -15,6 +15,7 @@ export const TeacherAndSocialMediaBox = styled.div`
   }
 `
 export const MapTeachersBox = styled.p`
+  color: ${styles.hightAccent};
   display: flex;
   align-items: center;
   column-gap: 8px;

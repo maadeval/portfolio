@@ -5,6 +5,7 @@ import { handleSelectAlign } from './handleSelectAlign'
 import { handleSelectStyleFromType } from './handleSelectStyleFromType'
 
 export const Paragraph = styled.p`
+  color: ${styles.darkAccent};
   font-size: 16px;
   text-align: center;
 

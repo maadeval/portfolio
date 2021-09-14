@@ -106,6 +106,7 @@ export const IndexNamePage = styled.span`
   font-size: 16px;
   font-family: ${styles.fontRegular};
   margin-right: 1rem;
+  color: ${styles.hightAccent};
 
   @media (min-width: ${styles.desktopQuery}) {
     order: 1;

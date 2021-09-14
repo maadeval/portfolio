@@ -1,7 +1,6 @@
-import { Route, Switch } from 'wouter'
+import { Redirect, Route, Switch } from 'wouter'
 
 import Home from 'pages/Home'
-import Error404 from 'pages/Error404'
 import MyHistory from 'pages/MyHistory'
 import UIThings from 'pages/UIThings'
 import Projects from 'pages/Projects'
@@ -17,7 +16,7 @@ const PageRouters = () => {
       <Route path="/projects" component={Projects} />
       <Route path="/projects/:title" component={ProjectInformation} />
       <Route path="/contact" component={Contact} />
-      <Route component={Error404} />
+      <Redirect to="/" />
     </Switch>
   )
 }
