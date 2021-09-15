@@ -20,7 +20,7 @@ const UIThings = ({ params }) => {
       <Title type={TITLE_TYPES.primary}>Desarrollo UI</Title>
       <Title type={TITLE_TYPES.tertiary}>
         Además de programar (y las películas de terror), me encanta diseñar.
-        Comprender y cooperar entre ambos equipos creo que es genial para el
+        Ayudarse y entenderse entre ambos equipos creo que es genial para el
         desarrollo de un mejor producto.
       </Title>
 
