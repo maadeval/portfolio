@@ -1,11 +1,13 @@
 import PropTypes from 'prop-types'
 import { createContext, useState } from 'react'
 import { css, Global } from '@emotion/react'
+import { useGetIsNight } from 'hooks/useGetIsNight'
 
 export const Context = createContext({ error: 'Not permission' })
 
 const ThemeContextProvider = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useState(false)
+  const { isNight } = useGetIsNight()
+  const [isDarkMode, setIsDarkMode] = useState(isNight)
 
   return (
     <Context.Provider value={{ isDarkMode, setIsDarkMode }}>
