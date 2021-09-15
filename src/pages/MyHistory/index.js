@@ -36,7 +36,7 @@ const MyHistory = () => {
         <Title type={TITLE_TYPES.tertiary}>
           Como camino tradicional al mundo del desarrollo web, empecé estudiando
           HTML, CSS y JavaScript. Al tiempo me empezó a interesar lo que había
-          alrededor de ese stack, y empecé con React, tecnologías backend y
+          alrededor de ese stack, y empecé con React, tecnologías Backend y
           diseño UI.
         </Title>
         <ListOfTecnologiesAndTitle tecnologies={listOfAllTecnologies} />

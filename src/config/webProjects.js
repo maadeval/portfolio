@@ -1,6 +1,7 @@
 import IconGitHub from 'components/ui/IconGitHub'
+import IconReact from 'components/ui/IconReact'
+import IconFirebase from 'components/ui/IconFirebase'
 
-/* import voyAlGym from 'assets/img/voyalgym.jpg' */
 import netflix from 'assets/img/netflix.png'
 import dorianDesignsAvatar from 'assets/img/dorian-designs-avatar.jpg'
 import midudevAvatar from 'assets/img/midudev-avatar.jpg'
@@ -21,11 +22,11 @@ export const webProjects = [
     tecnologies: [
       {
         name: 'React',
-        icon: <IconGitHub />,
+        icon: <IconReact />,
       },
       {
         name: 'Firebase',
-        icon: <IconGitHub />,
+        icon: <IconFirebase />,
       },
     ],
   },

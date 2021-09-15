@@ -1,6 +1,8 @@
 import IconDownload from 'components/ui/IconDownload'
 import IconGitHub from 'components/ui/IconGitHub'
 import IconLinkedIn from 'components/ui/IconLinkedIn'
+import IconMail from 'components/ui/IconMail'
+import IconWhatsApp from 'components/ui/IconWhatsApp'
 
 import { BUTTONS_TYPES } from './variableOfComponents'
 
@@ -48,5 +50,29 @@ export const socialMediaLinks = [
     title: 'LinkedIn',
     url: 'https://www.linkedin.com/in/mateo-%C3%A1lvarez-731313188/',
     icon: <IconLinkedIn />,
+  },
+]
+
+export const contactLinks = [
+  {
+    type: BUTTONS_TYPES.primary,
+    title: 'Hablar por WhatsApp',
+    url: 'https://wa.me/59898559874',
+    icon: <IconWhatsApp />,
+  },
+  {
+    title: 'Visitar mi LinkedIn',
+    url: 'https://www.linkedin.com/in/mateo-%C3%A1lvarez-731313188/',
+    icon: <IconLinkedIn />,
+  },
+  {
+    title: 'Visitar mi GitHub',
+    url: 'https://github.com/Mateoac12',
+    icon: <IconGitHub />,
+  },
+  {
+    title: 'Hablar por mail',
+    url: 'mailto:alvarez.fing@gmail.com',
+    icon: <IconMail />,
   },
 ]
