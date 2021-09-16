@@ -1,11 +1,13 @@
-import { useEffect, useState } from 'react'
-import { useLocation } from 'wouter'
+import { useState } from 'react'
 
 import { linksToToggleMenu } from 'config/globalLinks'
 import { BUTTONS_TYPES } from 'config/variableOfComponents'
 
+import useGetActualUrlMenu from 'hooks/useGetActualUrlMenu'
+
 import LinkButton from 'components/atoms/LinkButton'
 import MenuButton from 'components/atoms/MenuButton'
+import ThemeButton from 'components/molecules/ThemeButton'
 
 import {
   MenuBox,
@@ -14,21 +16,13 @@ import {
   ListItem,
   NavContainer,
 } from './styles'
-import ThemeButton from '../ThemeButton'
 
 const ToggleMenu = () => {
-  const [actualUrl] = useLocation()
-  const [pageName, setPageName] = useState('')
+  const { pageName } = useGetActualUrlMenu()
   const [isShow, setIsShow] = useState(false)
 
-  useEffect(() => {
-    const linkDescriptionFound = linksToToggleMenu.find(
-      ({ url }) => url === actualUrl
-    )
-    setPageName(linkDescriptionFound?.title || '')
-  }, [actualUrl])
-
   const handleChangeStatus = () => setIsShow((lastValue) => !lastValue)
+
   const handleChangeStatusFromMenuOpened = ({ target }) => {
     target.tagName === 'A' && setIsShow(false)
   }
