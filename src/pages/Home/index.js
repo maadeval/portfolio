@@ -23,10 +23,15 @@ import {
   ToggleLinkLeft,
 } from './styles'
 import TargetBlankButton from 'components/atoms/TargetBlankButton'
+import SEO from 'components/molecules/SEO'
 
 const Home = () => {
   return (
     <HomeContainer>
+      <SEO
+        title="Inicio"
+        description="Soy Mateo Alvarez, desarrollador Frontend, puedes ver proyectos mios, cosas de UI, posiblemente de Backend y un poco mi historia como programador."
+      />
       <LeftContent>
         <GradientCircle />
         <LogoImage loading="lazy" src={BigLogo} />

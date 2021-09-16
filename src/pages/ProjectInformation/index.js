@@ -16,6 +16,7 @@ import {
   ConentForRecruiters,
 } from './styles'
 import ListOfTecnologiesAndTitle from 'components/molecules/ListOfTecnologies'
+import SEO from 'components/molecules/SEO'
 
 const ProjectInformation = ({ params }) => {
   const { title: titleFromUrl } = params
@@ -36,6 +37,10 @@ const ProjectInformation = ({ params }) => {
 
   return (
     <PageContainer>
+      <SEO
+        title={title || 'Proyectos'}
+        description="Uno de los proyectos que tengo para mostrarte! Espero te guste."
+      />
       <Title type={TITLE_TYPES.primary}>{title}</Title>
       <Title type={TITLE_TYPES.tertiary}>{description}</Title>
       <ButtonContainer>

@@ -5,6 +5,7 @@ import { TITLE_TYPES } from 'config/variableOfComponents'
 import { PageContainer } from './styles'
 import logo from 'assets/img/BigLogo.png'
 import { useEffect, useRef } from 'react'
+import SEO from 'components/molecules/SEO'
 
 const Curriculum = () => {
   const linkToDownload = useRef()
@@ -15,6 +16,10 @@ const Curriculum = () => {
 
   return (
     <PageContainer>
+      <SEO
+        title="Descarga mi Curriculum"
+        description="Aquí puedes descargar mi curriculum para ver más información de mi. Mi carrera profesional, personal como estudiante, y más."
+      />
       <Title>Muchas Gracias!</Title>
       <Title type={TITLE_TYPES.tertiary}>
         Por tu tiempo y energía! Espero que tenga un dia increible y cualquier

@@ -10,10 +10,15 @@ import Title from 'components/atoms/Title'
 import { PageContainer } from './styles'
 import TeachersAndNetworkBar from 'components/molecules/TeachersAndNetworkBar'
 import ContainerProjects from 'components/molecules/ContainerProjects'
+import SEO from 'components/molecules/SEO'
 
 const Projects = () => {
   return (
     <PageContainer>
+      <SEO
+        title="Proyectos"
+        description="Soy Mateo Alvarez, y estos son uno de los proyectos web más apreciados que tengo. Muchos hechos con React, y otros un poco fuera de eso."
+      />
       <Title type={TITLE_TYPES.primary}>Proyectos</Title>
       <Title type={TITLE_TYPES.tertiary}>
         Proyectos personales que hice a modo de práctica. Uno de mis objetivos

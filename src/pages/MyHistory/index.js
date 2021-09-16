@@ -1,5 +1,6 @@
 import Title from 'components/atoms/Title'
 import ListOfTecnologiesAndTitle from 'components/molecules/ListOfTecnologies'
+import SEO from 'components/molecules/SEO'
 import { listOfAllTecnologies } from 'config/listOfAllTecnologies'
 import { TITLE_TYPES } from 'config/variableOfComponents'
 import { BoxSection, PageContainer, VerticalLine } from './styles'
@@ -7,6 +8,10 @@ import { BoxSection, PageContainer, VerticalLine } from './styles'
 const MyHistory = () => {
   return (
     <PageContainer>
+      <SEO
+        title="Mi Historia"
+        description="Te cuento mi historia con la programación, soy Mateo Alvarez, a día de hoy Frontend Developer. Aunque me gusta mucho el concepto de N-SHAPE."
+      />
       <Title>Mi Historia</Title>
       <Title type={TITLE_TYPES.tertiary}>
         Ser buena persona para mí va de la mano con ese espíritu de ayuda y de

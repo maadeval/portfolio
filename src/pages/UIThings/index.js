@@ -11,12 +11,17 @@ import TeachersAndNetworkBar from 'components/molecules/TeachersAndNetworkBar'
 import Title from 'components/atoms/Title'
 
 import { PageContainer } from './styles'
+import SEO from 'components/molecules/SEO'
 
 const UIThings = ({ params }) => {
   const { title: urlParam } = params
 
   return (
     <PageContainer>
+      <SEO
+        title="Desarrollo UI"
+        description="Programar es mi amor, pero diseñar tiene un lugar dentro de mi corazón. Y eso está genial! porque la mezcla de ambos puede lograr lindas cosas."
+      />
       <Title type={TITLE_TYPES.primary}>Desarrollo UI</Title>
       <Title type={TITLE_TYPES.tertiary}>
         Además de programar (y las películas de terror), me encanta diseñar.
