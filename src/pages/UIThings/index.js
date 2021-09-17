@@ -7,11 +7,11 @@ import ContainerProjects from 'components/molecules/ContainerProjects'
 import IconDribbble from 'components/ui/IconDribbble'
 import ModalOfUIDesign from 'components/layouts/ModalOfUIDesign'
 import ModalPortal from 'components/layouts/Modal'
+import SEO from 'components/molecules/SEO'
 import TeachersAndNetworkBar from 'components/molecules/TeachersAndNetworkBar'
 import Title from 'components/atoms/Title'
 
 import { PageContainer } from './styles'
-import SEO from 'components/molecules/SEO'
 
 const UIThings = ({ params }) => {
   const { title: urlParam } = params

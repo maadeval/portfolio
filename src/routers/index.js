@@ -1,12 +1,12 @@
 import { Redirect, Route, Switch } from 'wouter'
 
-import Home from 'pages/Home'
-import MyHistory from 'pages/MyHistory'
-import UIThings from 'pages/UIThings'
-import Projects from 'pages/Projects'
-import ProjectInformation from 'pages/ProjectInformation'
 import Contact from 'pages/Contact'
 import Curriculum from 'pages/Curriculum'
+import Home from 'pages/Home'
+import MyHistory from 'pages/MyHistory'
+import ProjectInformation from 'pages/ProjectInformation'
+import Projects from 'pages/Projects'
+import UIThings from 'pages/UIThings'
 
 const PageRouters = () => {
   return (

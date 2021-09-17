@@ -39,3 +39,7 @@ export const ThemeButtonContainer = styled.div`
   cursor: pointer;
   color: ${styles.hightAccent};
 `
+
+export const ThemeText = styled.span`
+  margin-right: 1rem;
+`

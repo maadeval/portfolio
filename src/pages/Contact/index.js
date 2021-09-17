@@ -1,12 +1,11 @@
 import { TITLE_TYPES } from 'config/variableOfComponents'
-
 import { contactLinks } from 'config/globalLinks'
 
+import SEO from 'components/molecules/SEO'
 import Title from 'components/atoms/Title'
 import TargetBlankButton from 'components/atoms/TargetBlankButton'
 
 import { LinksToContact, PageContainer } from './styles'
-import SEO from 'components/molecules/SEO'
 
 const Contact = () => {
   return (

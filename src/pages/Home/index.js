@@ -5,12 +5,14 @@ import {
 } from 'config/variableOfComponents'
 import { linksToToggleMenu, socialMediaLinks } from 'config/globalLinks'
 
-import Title from 'components/atoms/Title'
-import Text from 'components/atoms/Text'
-import LinkButton from 'components/atoms/LinkButton'
-import GradientCircle from 'components/ui/GradientCircle'
-
 import BigLogo from 'assets/img/BigLogo.png'
+
+import GradientCircle from 'components/ui/GradientCircle'
+import LinkButton from 'components/atoms/LinkButton'
+import SEO from 'components/molecules/SEO'
+import TargetBlankButton from 'components/atoms/TargetBlankButton'
+import Text from 'components/atoms/Text'
+import Title from 'components/atoms/Title'
 
 import {
   ButtonLinksContainer,
@@ -22,8 +24,6 @@ import {
   LeftContent,
   ToggleLinkLeft,
 } from './styles'
-import TargetBlankButton from 'components/atoms/TargetBlankButton'
-import SEO from 'components/molecules/SEO'
 
 const Home = () => {
   return (

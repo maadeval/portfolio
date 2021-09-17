@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
-import { useLocation } from 'wouter'
 
 import { uiProjects } from 'config/uiProjects'
 import { TEXT_TYPES, TITLE_TYPES } from 'config/variableOfComponents'
+
+import useFindProjectInformation from 'hooks/useFindProjectInformation'
+import { useRedirectPage } from 'hooks/useRedirectPage'
 
 import Title from 'components/atoms/Title'
 import Text from 'components/atoms/Text'
@@ -11,23 +12,13 @@ import Text from 'components/atoms/Text'
 import { ProjectContainer, Image } from './styles'
 
 const ModalOfUIDesign = ({ title: _title }) => {
-  const [, setLocation] = useLocation()
-  const [projectInfo, setProjectInfo] = useState({})
+  const { setRedirectPage } = useRedirectPage('/ui-design')
+  const { projectInfo } = useFindProjectInformation(uiProjects, _title)
+
   const { title, img, description } = projectInfo
 
-  useEffect(() => {
-    const foundProject = uiProjects.find(
-      ({ title }) => title === decodeURI(_title)
-    )
-    setProjectInfo({ ...foundProject })
-  }, [])
-
-  const handleReturnDesignPage = () => {
-    setLocation('/ui-design')
-  }
-
   return (
-    <ProjectContainer onClick={handleReturnDesignPage}>
+    <ProjectContainer onClick={() => setRedirectPage('')}>
       <Title type={TITLE_TYPES.secondary}>{title}</Title>
       <Text type={TEXT_TYPES.low}>{description}</Text>
       <Image loading="lazy" src={img} alt={title} />

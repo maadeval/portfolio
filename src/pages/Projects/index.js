@@ -6,11 +6,11 @@ import {
 } from 'config/webProjects'
 
 import Title from 'components/atoms/Title'
-
-import { PageContainer } from './styles'
 import TeachersAndNetworkBar from 'components/molecules/TeachersAndNetworkBar'
 import ContainerProjects from 'components/molecules/ContainerProjects'
 import SEO from 'components/molecules/SEO'
+
+import { PageContainer } from './styles'
 
 const Projects = () => {
   return (

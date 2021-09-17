@@ -1,11 +1,14 @@
+import { useEffect, useRef } from 'react'
+import logo from 'assets/img/BigLogo.png'
+
+import { TITLE_TYPES } from 'config/variableOfComponents'
+
+import IconWhatsApp from 'components/ui/IconWhatsApp'
+import SEO from 'components/molecules/SEO'
 import TargetBlankButton from 'components/atoms/TargetBlankButton'
 import Title from 'components/atoms/Title'
-import IconWhatsApp from 'components/ui/IconWhatsApp'
-import { TITLE_TYPES } from 'config/variableOfComponents'
+
 import { PageContainer } from './styles'
-import logo from 'assets/img/BigLogo.png'
-import { useEffect, useRef } from 'react'
-import SEO from 'components/molecules/SEO'
 
 const Curriculum = () => {
   const linkToDownload = useRef()
