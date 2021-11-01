@@ -16,7 +16,9 @@ const Contact = () => {
       />
       <Title>Contacto</Title>
       <Title type={TITLE_TYPES.tertiary}>
-        Muchas gracias por tomarte tu tiempo! Un saludo enorme 😁
+        Aquí tienes todas mis redes para que nos podamos contactar. Incluido mi
+        GitHub en donde podrás ver los repositorios de mis proyectos y mi
+        actividad.
       </Title>
       <LinksToContact>
         {contactLinks.map(({ type, title, url, icon }) => (
