@@ -25,8 +25,8 @@ const Curriculum = () => {
       />
       <Title>Muchas Gracias!</Title>
       <Title type={TITLE_TYPES.tertiary}>
-        Por tu tiempo y energía! Espero que tenga un dia increible y cualquier
-        cosa no dude en contactarme, un saludo enorme!
+        Por tu tiempo! Espero que tengas un día increíble y cualquier cosa no
+        dudes en contactarme. Un saludo!
       </Title>
       <Title type={TITLE_TYPES.tertiary}>- Mateo Alvarez -</Title>
       <TargetBlankButton
