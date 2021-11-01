@@ -10,7 +10,7 @@ const MyHistory = () => {
     <PageContainer>
       <SEO
         title="Mi Historia"
-        description="Te cuento mi historia con la programación, soy Mateo Alvarez, a día de hoy Frontend Developer. Aunque me gusta mucho el concepto de T-SHAPE."
+        description="Te cuento mi historia con la programación, soy Mateo Alvarez, a día de hoy Frontend Developer. Aunque me gusta mucho el concepto de T-SHAPED."
       />
       <Title>Mi Historia</Title>
       <Title type={TITLE_TYPES.tertiary}>

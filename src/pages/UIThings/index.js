@@ -20,7 +20,7 @@ const UIThings = ({ params }) => {
     <PageContainer>
       <SEO
         title="Desarrollo UI"
-        description="Programar es mi amor, pero diseñar tiene un lugar dentro de mi corazón. Y eso está genial! porque la mezcla de ambos puede lograr lindas cosas."
+        description="Además de programar, me encanta diseñar. Ayudarse y entenderse entre ambos equipos creo que es genial para el desarrollo de un mejor producto."
       />
       <Title type={TITLE_TYPES.primary}>Desarrollo UI</Title>
       <Title type={TITLE_TYPES.tertiary}>
