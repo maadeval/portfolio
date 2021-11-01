@@ -1,0 +1,55 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <link type="text/css" rel="stylesheet" id="dark-mode-custom-link"/>
+  <link type="text/css" rel="stylesheet" id="dark-mode-general-link"/>
+  <style lang="en" type="text/css" id="dark-mode-custom-style"/>
+  <style lang="en" type="text/css" id="dark-mode-native-style"/>
+  <channel>
+    <title>Mateo Alvarez, desarrollador Frontend, diseño UI, Proyectos</title>
+    <link>https://mateo-alvarez.vercel.app/</link>
+    <description>Mateo Alvarez, desarrollador Frontend, diseño UI, Proyectos, Mi Historia y formas de contacto.</description>
+    <language>es-ES</language>
+    <atom:link href="https://mateo-alvarez.vercel.app/index.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Mi Historia</title>
+      <link>https://mateo-alvarez.vercel.app/about-me</link>
+      <guid>https://mateo-alvarez.vercel.app/about-me</guid>
+      <description>Te cuento mi historia con la programación, soy Mateo Alvarez, a día de hoy Frontend Developer. Aunque me gusta mucho el concepto de T-SHAPED.</description>
+    </item>
+    <item>
+      <title>Desarrollo UI</title>
+      <link>https://mateo-alvarez.vercel.app/ui-design</link>
+      <guid>https://mateo-alvarez.vercel.app/ui-design</guid>
+      <description>Además de programar, me encanta diseñar. Ayudarse y entenderse entre ambos equipos creo que es genial para el desarrollo de un mejor producto.</description>
+    </item>
+    <item>
+      <title>Netflix UI</title>
+      <link>https://mateo-alvarez.vercel.app/ui-design/Netflix</link>
+      <guid>https://mateo-alvarez.vercel.app/ui-design/Netflix</guid>
+      <description>Fue uno de mis primeros trabajos en Figma. Me gustó sobre todo por ver lo bien que queda la transparencia en enlaces no activos y el contraste de los colores claves de Netflix.</description>
+    </item>
+    <item>
+      <title>Mercado Libre UI</title>
+      <link>https://mateo-alvarez.vercel.app/ui-design/Mercado%20Libre</link>
+      <guid>https://mateo-alvarez.vercel.app/ui-design/Mercado%20Libre</guid>
+      <description>Una alternativa que no refleja el color principal de la marca, pero que utiliza sus colores secundarios para resaltar el logo de la marca y el propio producto en búsqueda.</description>
+    </item>
+    <item>
+      <title>Proyectos</title>
+      <link>https://mateo-alvarez.vercel.app/projects</link>
+      <guid>https://mateo-alvarez.vercel.app/projects</guid>
+      <description>Proyectos personales que hice a modo de práctica. Uno de mis objetivos es tratar estos sitios como proyectos verdaderos, pensando en la escalabilidad, metodologías, y que el código sea lo más correcto e intuitivo posible.</description>
+    </item>
+    <item>
+      <title>You Do It</title>
+      <link>https://mateo-alvarez.vercel.app/projects/Voy%20al%20Gym</link>
+      <guid>https://mateo-alvarez.vercel.app/projects/Voy%20al%20Gym</guid>
+      <description>Un sitio destinado a deportistas y dueños de gimnasios. La idea es simple, ayudar a los dueños a gestionar los cupos de sus clases por hora y día. Y permitirle a los socios registrarse a un cupo limitado solo con un click.</description>
+    </item>
+    <item>
+      <title>Contacto</title>
+      <link>https://mateo-alvarez.vercel.app/contact</link>
+      <guid>https://mateo-alvarez.vercel.app/contact</guid>
+      <description>Aquí tienes todas mis redes para que nos podamos contactar. Incluido mi GitHub en donde podrás ver los repositorios de mis proyectos y mi actividad.</description>
+    </item>
+  </channel>
+</rss>
