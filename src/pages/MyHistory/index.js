@@ -53,7 +53,7 @@ const MyHistory = () => {
           en algo, siempre hay avances y nuevas herramientas para usar. Y otro
           potencial es la posibilidad de poder hacer lo mismo de muchas maneras
           distintas. Esto no solo evita hacer tareas muy monótonas, sino buscar
-          mejores alternativas y hacer team programing para aprender nuevas
+          mejores alternativas y hacer team programming para aprender nuevas
           formas y motivar al trabajo en grupo.
         </Title>
       </BoxSection>
