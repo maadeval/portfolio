@@ -14,10 +14,10 @@ const MyHistory = () => {
       />
       <Title>Mi Historia</Title>
       <Title type={TITLE_TYPES.tertiary}>
-        Soy desarrollador frontend con casi dos años de experiencia en sector
-        web. Soy dedicado, responsable, y relaciono mucho las capacidades
-        técnicas con las blandas, lo que significa que siempre voy a tratar de
-        ser un buen compañero de equipo, tanto dentro del proyecto en el que me
+        Desarrollador frontend con casi dos años de experiencia en sector web.
+        Soy dedicado, responsable, y relaciono mucho las capacidades técnicas
+        con las blandas, lo que significa que siempre voy a tratar de ser un
+        buen compañero de equipo, tanto dentro del proyecto en el que me
         encuentre como fuera.
       </Title>
 
