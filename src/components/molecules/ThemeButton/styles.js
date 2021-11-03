@@ -8,6 +8,7 @@ export const Circle = styled.button`
   border-radius: 50%;
   border: none;
   display: block;
+  cursor: pointer;
 `
 
 export const BoxContainer = styled.div`
