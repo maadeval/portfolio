@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { styles } from 'config/styles'
 
 export const PageContainer = styled.section`
   width: 100%;
@@ -8,6 +9,8 @@ export const PageContainer = styled.section`
 
 export const LinksToContact = styled.section`
   display: grid;
-  justify-items: center;
+  max-width: ${styles.maxButtonWidth};
   margin: 64px 0;
+  margin-left: auto;
+  margin-right: auto;
 `

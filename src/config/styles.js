@@ -13,6 +13,7 @@ export const styles = {
   mediumShadow: 'var(--medium-shadow)',
 
   /* querys */
+  maxButtonWidth: '320px',
   desktopQuery: '950px',
   headerMaxWidth: '1024px',
   LayoutMaxWidth: '1440px',
