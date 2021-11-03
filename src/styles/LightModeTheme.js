@@ -29,6 +29,11 @@ const LightModeTheme = () => {
         body {
           background-color: var(--background);
         }
+
+        * {
+          transition: background-color 0.2s ease, color 0.2s ease,
+            box-shadow 0.2s ease;
+        }
       `}
     />
   )
