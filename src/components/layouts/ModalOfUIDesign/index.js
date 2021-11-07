@@ -21,7 +21,7 @@ const ModalOfUIDesign = ({ title: _title }) => {
     <ProjectContainer onClick={() => setRedirectPage('')}>
       <Title type={TITLE_TYPES.secondary}>{title}</Title>
       <Text type={TEXT_TYPES.low}>{description}</Text>
-      <Image loading="lazy" src={img} alt={title} />
+      <Image src={img} alt={title} />
     </ProjectContainer>
   )
 }

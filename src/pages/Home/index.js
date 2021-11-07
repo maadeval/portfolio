@@ -34,7 +34,7 @@ const Home = () => {
       />
       <LeftContent>
         <GradientCircle />
-        <LogoImage loading="lazy" src={BigLogo} />
+        <LogoImage src={BigLogo} />
         <ToggleLinkLeft>
           {socialMediaLinks.map(({ title, url, icon }) => (
             <TargetBlankButton

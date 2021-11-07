@@ -27,7 +27,7 @@ const ContainerProjects = ({
             {textOfRedirectButton}
             {IconOfRedirectButton && <IconOfRedirectButton />}
           </LinkTo>
-          <UIImage loading="lazy" src={img} alt={title} />
+          <UIImage src={img} alt={title} />
         </UiImageContain>
       ))}
     </Container>
