@@ -1,6 +1,6 @@
 import IconDribbble from 'components/ui/IconDribbble'
 
-import randomHouse from 'assets/img/random-house.jpg'
+import emprendeAprendiendo from 'assets/img/emprende-aprendiendo.jpg'
 import mercadoLibre from 'assets/img/mercado-libre.png'
 import netflix from 'assets/img/netflix.png'
 import salomonSanchez from 'assets/img/salomon-sanchez-avatar.jpg'
@@ -21,11 +21,11 @@ export const uiProjects = [
       'Una alternativa que no refleja el color principal de la marca, pero que utiliza sus colores secundarios para resaltar el logo de la marca y el propio producto en búsqueda.',
   },
   {
-    title: 'Random House',
-    img: randomHouse,
-    url: 'https://dribbble.com/shots/16808742-Random-House',
+    title: 'Emprende Aprendiendo',
+    img: emprendeAprendiendo,
+    url: 'https://dribbble.com/shots/16969757-Emprende-Aprendiendo',
     description:
-      'Una pequeña e-commerce destinada a bares que visionan con una nueva e interactiva carta customizada al estilo de la marca. Aplica un concepto nocturno, toques de glassmorfismo y colores primarios que representan los dos tragos más destacados del lugar.',
+      'Este es el rediseño de un sitio que existe actualmente. Una de las cosas bellas del diseño UI es que puedes crear tus propias interpretaciones de cómo te gustaría que se viera un producto, y es mucho más satisfactorio cuando ese producto lo usas.',
   },
 ]
 
