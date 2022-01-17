@@ -48,7 +48,7 @@ export const socialMediaLinks = [
   },
   {
     title: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/mateo-%C3%A1lvarez-731313188/',
+    url: 'https://www.linkedin.com/in/mateo-alvarez-desarrollador/',
     icon: <IconLinkedIn />,
   },
 ]
@@ -62,7 +62,7 @@ export const contactLinks = [
   },
   {
     title: 'Visitar mi LinkedIn',
-    url: 'https://www.linkedin.com/in/mateo-%C3%A1lvarez-731313188/',
+    url: 'https://www.linkedin.com/in/mateo-alvarez-desarrollador/',
     icon: <IconLinkedIn />,
   },
   {
