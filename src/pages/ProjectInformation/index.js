@@ -33,6 +33,7 @@ const ProjectInformation = ({ params }) => {
     videoUrl,
     icon,
     tecnologies,
+    aboutProject,
   } = projectInfo
 
   return (
@@ -44,7 +45,13 @@ const ProjectInformation = ({ params }) => {
       <Title type={TITLE_TYPES.primary}>{title}</Title>
       <Title type={TITLE_TYPES.tertiary}>{description}</Title>
       <ButtonContainer>
-        <TargetBlankButton icon={icon} url={codeUrl} title={'Ver en GitHub'} />
+        {codeUrl && (
+          <TargetBlankButton
+            icon={icon}
+            url={codeUrl}
+            title={'Ver en GitHub'}
+          />
+        )}
         <TargetBlankButton
           type={BUTTONS_TYPES.secondary}
           url={url}
@@ -67,9 +74,21 @@ const ProjectInformation = ({ params }) => {
       />
 
       <ConentForRecruiters>
-        <Title type={TITLE_TYPES.secondary}>Recurso para Recruiters</Title>
-        <Title type={TITLE_TYPES.tertiary}>{extraDescription}</Title>
-        <TargetBlankButton title={'Demo en Youtube'} url={videoUrl} />
+        {aboutProject && (
+          <>
+            <Title type={TITLE_TYPES.secondary}>Sobre el proyecto</Title>
+            <Title type={TITLE_TYPES.tertiary}>{aboutProject}</Title>
+          </>
+        )}
+        {extraDescription && (
+          <>
+            <Title type={TITLE_TYPES.secondary}>Recurso para Recruiters</Title>
+            <Title type={TITLE_TYPES.tertiary}>{extraDescription}</Title>
+          </>
+        )}
+        {videoUrl && (
+          <TargetBlankButton title={'Demo en Youtube'} url={videoUrl} />
+        )}
       </ConentForRecruiters>
     </PageContainer>
   )
