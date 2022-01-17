@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import logo from 'assets/img/BigLogo.png'
+import curriculum from 'assets/mateo-alvarez-curriculum.pdf'
 
 import { TITLE_TYPES } from 'config/variableOfComponents'
 
@@ -34,7 +34,12 @@ const Curriculum = () => {
         title={'WhatsApp'}
         url={'https://wa.me/59898559874'}
       />
-      <a ref={linkToDownload} href="" download={logo} />
+      <a
+        ref={linkToDownload}
+        href={curriculum}
+        target="_blank"
+        rel="noopener noreferrer"
+      />
     </PageContainer>
   )
 }
