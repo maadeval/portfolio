@@ -6,8 +6,8 @@ import votaapp2 from 'assets/img/votaapp2.jpg'
 import randomhouse from 'assets/img/randomhouse.jpg'
 import randomhouse1 from 'assets/img/randomhouse1.jpg'
 import randomhouse2 from 'assets/img/randomhouse2.jpg'
-import dorianDesignsAvatar from 'assets/img/dorian-designs-avatar.jpg'
 import midudevAvatar from 'assets/img/midudev-avatar.jpg'
+import goncyAvatar from 'assets/img/goncy-avatar.jpg'
 import IconNext from 'components/ui/IconNext'
 import TypeScriptIcon from 'components/ui/TypeScriptIcon'
 import TailwindIcon from 'components/ui/TailwindIcon'
@@ -96,8 +96,8 @@ export const webProjectsTeach = [
     url: 'https://www.youtube.com/channel/UC8LeXCWOalN8SxlrPcG-PaQ',
   },
   {
-    img: dorianDesignsAvatar,
-    title: 'Dorian Desings',
-    url: 'https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A',
+    img: goncyAvatar,
+    title: 'Goncy',
+    url: 'https://www.youtube.com/c/GonzaloPozzo',
   },
 ]
