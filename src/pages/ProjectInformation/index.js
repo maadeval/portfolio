@@ -70,13 +70,13 @@ const ProjectInformation = ({ params }) => {
 
       <ListOfTecnologiesAndTitle
         tecnologies={tecnologies}
-        title={'Pack tecnologico del Proyecto'}
+        title={'Pack tecnológico'}
       />
 
       <ConentForRecruiters>
         {aboutProject && (
           <>
-            <Title type={TITLE_TYPES.secondary}>Sobre el proyecto</Title>
+            <Title type={TITLE_TYPES.secondary}>Sobre el Proyecto</Title>
             <Title type={TITLE_TYPES.tertiary}>{aboutProject}</Title>
           </>
         )}
