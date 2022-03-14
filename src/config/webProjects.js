@@ -3,12 +3,16 @@ import IconGitHub from 'components/ui/IconGitHub'
 import votaapp from 'assets/img/votaapp.jpg'
 import votaapp1 from 'assets/img/votaapp1.jpg'
 import votaapp2 from 'assets/img/votaapp2.jpg'
+import tomatito from 'assets/img/tomatito.jpg'
+import tomatito1 from 'assets/img/tomatito1.jpg'
+import tomatito2 from 'assets/img/tomatito2.jpg'
 import randomhouse from 'assets/img/randomhouse.jpg'
 import randomhouse1 from 'assets/img/randomhouse1.jpg'
 import randomhouse2 from 'assets/img/randomhouse2.jpg'
 import midudevAvatar from 'assets/img/midudev-avatar.jpg'
 import goncyAvatar from 'assets/img/goncy-avatar.jpg'
 import IconNext from 'components/ui/IconNext'
+import IconReact from 'components/ui/IconReact'
 import TypeScriptIcon from 'components/ui/TypeScriptIcon'
 import TailwindIcon from 'components/ui/TailwindIcon'
 import ChakraIcon from 'components/ui/ChakraIcon'
@@ -78,6 +82,34 @@ export const webProjects = [
       {
         name: 'Jest',
         icon: <JestIcon />,
+      },
+    ],
+  },
+  {
+    title: 'Tomatito',
+    description:
+      '¡Un Pomodoro con distintas metodologías dentro de él! Puedes elegir una de las 3 que hay, y cada día se guardará el progreso que hiciste en tus tareas! Así podrás trabajar duro y con descansos merecidos.',
+    extraDescription: null,
+    aboutProject:
+      'El método Pomodoro es genial y hay muchos sitios web que tienen la posibilidad de usarlo. Pero... ¿Todos se adaptan a las necesidades del usuario? En mi caso no 😥 por eso cree uno a mi gusto! y con las metodologías que más uso en mi dia a dia. Tomatito es una aplicación que te ayudará a mejorar tu tiempo! Y con una bonita interfaz ✨',
+    img: tomatito,
+    images: [tomatito1, tomatito2],
+    url: 'https://tomatito.vercel.app/',
+    codeUrl: 'https://github.com/Mateoac12/pomodoro',
+    videoUrl: null,
+    icon: <IconGitHub />,
+    tecnologies: [
+      {
+        name: 'React',
+        icon: <IconReact />,
+      },
+      {
+        name: 'TypeScript',
+        icon: <TypeScriptIcon />,
+      },
+      {
+        name: 'TailwindCSS',
+        icon: <TailwindIcon />,
       },
     ],
   },
