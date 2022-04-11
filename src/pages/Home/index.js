@@ -5,9 +5,9 @@ import {
 } from 'config/variableOfComponents'
 import { linksToToggleMenu, socialMediaLinks } from 'config/globalLinks'
 
-import BigLogo from 'assets/img/BigLogo.png'
+import BigLogo from 'assets/img/small.jpg'
 
-import GradientCircle from 'components/ui/GradientCircle'
+// import GradientCircle from 'components/ui/GradientCircle'
 import LinkButton from 'components/atoms/LinkButton'
 import SEO from 'components/molecules/SEO'
 import TargetBlankButton from 'components/atoms/TargetBlankButton'
@@ -33,7 +33,7 @@ const Home = () => {
         description="Soy Mateo Alvarez, desarrollador Frontend, puedes ver proyectos mios, cosas de UI, posiblemente de Backend y un poco mi historia como programador."
       />
       <LeftContent>
-        <GradientCircle />
+        {/* <GradientCircle /> */}
         <LogoImage src={BigLogo} />
         <ToggleLinkLeft>
           {socialMediaLinks.map(({ title, url, icon }) => (

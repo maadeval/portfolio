@@ -2,7 +2,10 @@ import styled from '@emotion/styled'
 import { styles } from 'config/styles'
 
 export const HomeContainer = styled.section`
+  margin-bottom: 4rem;
+
   @media (min-width: ${styles.desktopQuery}) {
+    margin-bottom: 0;
     display: grid;
     grid-template-columns: minmax(500px, 0.5fr) 1fr;
     column-gap: 80px;
@@ -19,7 +22,7 @@ export const ToggleLinkLeft = styled.div`
     display: block;
     position: absolute;
     right: 0;
-    bottom: -80px;
+    bottom: -1.5rem;
     transform: translateX(-50%);
   }
 `
@@ -63,9 +66,14 @@ export const RigthContent = styled.div`
 `
 
 export const LogoImage = styled.img`
-  display: none;
-
+  display: inline-block;
+  margin-top: 2rem;
+  max-width: 20%;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px ${styles.lowAccent};
+  
   @media (min-width: ${styles.desktopQuery}) {
-    display: inline-block;
+    box-shadow: 0 0 0 8px ${styles.lowAccent};
+    max-width: 60%;
   }
 `
